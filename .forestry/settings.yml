@@ -4,11 +4,16 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: category
+  label: Category A
+  create: all
+  match: "**/*"
 - type: heading
   label: Content
 - type: directory
   path: content/posts
-  label: Blog Posts
+  label: Doc Pages
   create: documents
   match: "**/*"
   new_doc_ext: md
